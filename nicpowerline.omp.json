@@ -1,0 +1,147 @@
+{
+    "final_space": true,
+    "osc99": false,
+    "console_title": false,
+    "console_title_style": "",
+    "console_title_template": "",
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "horizontal_offset": 0,
+            "vertical_offset": 0,
+            "segments": [
+                {
+                    "type": "path",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#100e23",
+                    "foreground_templates": null,
+                    "background": "#1E91EA",
+                    "background_templates": null,
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "folder_icon": "📂",
+                        "home_icon": "🏡",
+                        "style": "agnoster",
+                        "mapped_locations": [
+                            [
+                                "C:\\code",
+                                "💻"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "git",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "foreground": "#f0f0f0",
+                    "background": "#2E465D",
+                    "properties": {
+                        "display_stash_count": true,
+                        "display_upstream_icon": true,
+                        "display_status": true,
+                        "status_colors_enabled": true,
+                        "color_background": false,
+                        "branch_icon": "\uf418 ",
+                        "branch_identical_icon": "痢",
+                        "branch_gone_icon": "裏",
+                        "branch_ahead_icon": "",
+                        "branch_behind_icon": "",
+                        "status_separator_icon": " ",
+                        "local_working_icon": " ",
+                        "stash_count_icon": " ",
+                        "local_changes_color": "#ffeb3b",
+                        "working_color": "#E84855",
+                        "staging_color": "#2FDA4E",
+                        "ahead_color": "#2EC4B6",
+                        "behind_color": "#8A4FFF"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "right",
+            "horizontal_offset": 0,
+            "vertical_offset": 1,
+            "segments": [
+                {
+                    "type": "time",
+                    "style": "powerline",
+                    "foreground": "#ffffff",
+                    "background": "#B28A15",
+                    "properties": {
+                        "time_format": "3:04:05",
+                        "prefix": " ⌚"
+                    },
+                    "invert_powerline": true,
+                    "powerline_symbol": ""
+                },
+                {
+                    "type": "dotnet",
+                    "style": "powerline",
+                    "foreground": "#ffffff",
+                    "background": "#453259",
+                    "properties": {
+                        "prefix": " \uE70C ",
+                        "style": "full"
+                    },
+                    "invert_powerline": true,
+                    "powerline_symbol": ""
+                }
+            ]
+        },
+        {
+            "type": "newline"
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "horizontal_offset": 0,
+            "vertical_offset": 0,
+            "segments": [
+                {
+                    "type": "root",
+                    "style": "plain",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#FFEE58",
+                    "foreground_templates": null,
+                    "background": "",
+                    "background_templates": null,
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": null
+                },
+                {
+                    "type": "exit",
+                    "style": "plain",
+                    "foreground": "#66D372",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "display_exit_code": true,
+                        "always_enabled": true,
+                        "error_color": "#e91e63",
+                        "color_background": true,
+                        "success_icon": " ",
+                        "prefix": "♥"
+                    }
+                },
+                {
+                    "type": "text",
+                    "style": "plain",
+                    "foreground": "#E06C75",
+                    "properties": {
+                        "prefix": "",
+                        "text": "\ue0b1"
+                    }
+                }
+            ]
+        }
+    ]
+}

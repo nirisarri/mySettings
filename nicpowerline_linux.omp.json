@@ -28,11 +28,7 @@
                         "style": "agnoster",
                         "mapped_locations": [
                             [
-                                "C:\\code",
-                                "💻"
-                            ],
-                            [
-                                "/home/nic/code",
+                                "/Users/nicdeiri/code",
                                 "💻"
                             ]
                         ]
@@ -79,6 +75,14 @@
             ]
         },
         {
+            "type": "node",
+            "style": "powerline",
+            "powerline_symbol": "\uE0B0",
+            "foreground": "#ffffff",
+            "background": "#6CA35E",
+            "template": " \uE718 {{ .Full }} "
+        },
+        {
             "type": "prompt",
             "alignment": "right",
             "horizontal_offset": 0,
@@ -118,6 +122,17 @@
                     "leading_diamond": "",
                     "trailing_diamond": "",
                     "properties": null
+                },
+                {
+                    "type": "aws",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "foreground": "#ffffff",
+                    "background": "#FFA400",
+                    "properties": {
+                        "prefix": " \uE7AD ",
+                        "template": "AWS{{.Profile}}{{if .Region}}@{{.Region}}{{end}}"
+                    }
                 },
                 {
                     "type": "os",

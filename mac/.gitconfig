@@ -1,0 +1,24 @@
+[alias]
+s = status
+ch = checkout
+br = branch
+pod = pull origin develop
+unstage = reset --soft HEAD^
+ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+amend = commit --amend -m
+[user]
+email = nicdeiri@amazon.com
+name = Nicolas De Irisarri
+[push]
+default = current
+[init]
+defaultBranch = main
+[core]
+excludesfile = /Users/nicdeiri/.gitignore_global
+[difftool "sourcetree"]
+cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+path =
+[mergetool "sourcetree"]
+cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+trustExitCode = true

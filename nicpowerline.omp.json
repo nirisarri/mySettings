@@ -13,7 +13,7 @@
             "home_icon": "🏡",
             "mapped_locations": [
               [
-                "/Users/nicdeiri/code",
+                "c:\\code",
                 "🚀"
               ],
               [
@@ -98,9 +98,6 @@
       "type": "prompt"
     },
     {
-      "type": "newline"
-    },
-    {
       "alignment": "left",
       "segments": [
         {
@@ -139,7 +136,8 @@
           "type": "text"
         }
       ],
-      "type": "prompt"
+      "type": "prompt",
+      "newline": true
     }
   ],
   "final_space": true,

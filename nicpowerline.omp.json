@@ -9,7 +9,7 @@
           "foreground": "#100e23",
           "powerline_symbol": "\ue0b0",
           "properties": {
-            "folder_icon": "\uf07b",
+            "folder_separator_icon": "\ue0b1",
             "home_icon": "🏡",
             "mapped_locations": [
               [
@@ -17,11 +17,19 @@
                 "🚀"
               ],
               [
+                "d:\\git",
+                "\uf7a3"
+              ],
+              [
+                "d:\\git\\osi.wpmono",
+                "🚀 \uf7a3"
+              ],
+              [
                 "/home/nic/code",
                 "🚀"
               ]
             ],
-            "style": "agnoster"
+            "style": "full"
           },
           "style": "powerline",
           "template": " {{ .Path }} ",
@@ -64,6 +72,16 @@
     {
       "alignment": "right",
       "segments": [
+        {
+          "type": "text",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "background": "#E06C75",
+          "template": " {{if .Env.CURRPROFILE }}\uf299 {{.Env.CURRPROFILE}} {{end}}",
+          "properties": {
+            "display_mode": "always"
+          }
+        },
         {
           "type": "python",
           "style": "powerline",
